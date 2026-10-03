@@ -316,7 +316,7 @@ def draw_keys(rows, container_key):
 
 
 def main():
-    st.set_page_config(page_title="Scientific Calculator by Khurram Shahzad", page_icon="🧮")
+    st.set_page_config(page_title="Scientific Calculator", page_icon="🧮")
     st.html(CSS)
     s = st.session_state
     for name, value in {"expr": "", "last": "", "error": "", "done": False,
@@ -330,7 +330,7 @@ def main():
             s.keys_seen = number
             press(key)
 
-    st.title("🧮 Scientific Calculator")
+    st.title("🧮 Scientific Calculator by Khurram Shahzad")
     st.caption("Click the buttons or type on your keyboard. Press Enter to calculate.")
 
     text = s.error or s.expr or "0"
